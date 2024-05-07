@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FrontController">
+   <bottom>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1200.0" style="-fx-background-color: linear-gradient(to bottom,  #B4E4F6, #3498db);" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="619.0" layoutY="240.0" text="CNIC Number" textFill="#0f225e">
+               <font>
+       <Font name="Berlin Sans FB Demi Bold" size="28.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cnicAdminText" layoutX="838.0" layoutY="236.0" prefHeight="40.0" prefWidth="250.0" promptText="CNIC">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font></TextField>
+            <Button fx:id="addBookingAdmin" layoutX="908.0" layoutY="493.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#AddedBooking" prefHeight="42.0" prefWidth="110.0" style="-fx-background-color: linear-gradient(to bottom, #010050, #002080); -fx-background-radius: 20; -fx-border-radius: 18; -fx-border-color: white; -fx-border-width: 2;" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="645.0" layoutY="290.0" text="Train Name" textFill="#0f225e">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="28.0" />
+               </font>
+            </Label>
+                 <Label layoutX="632.0" layoutY="387.0" prefHeight="34.0" prefWidth="162.0" text="From Station" textFill="#0f225e">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="28.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TrainNameAdminText" layoutX="838.0" layoutY="286.0" prefHeight="40.0" prefWidth="250.0" promptText="Name Of Train">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font></TextField>
+            <TextField fx:id="ArrivalAdminText" layoutX="838.0" layoutY="384.0" prefHeight="40.0" prefWidth="250.0" promptText="Arrival">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font></TextField>
+            <ImageView fitHeight="248.0" fitWidth="415.0" layoutX="665.0" layoutY="-41.0" pickOnBounds="true">
+            <image>
+        <Image url="file:/C:/Users/Hp/Downloads/Train%20Reservation%20System/abc.png" />
+    </image>
+            </ImageView>
+            <Label layoutX="665.0" layoutY="436.0" prefHeight="34.0" prefWidth="126.0" text="To Station" textFill="#0f225e">
+               <font>
+                      <Font name="Berlin Sans FB Demi Bold" size="28.0" />
+               </font>
+            </Label>
+            <TextField fx:id="DestinationAdminText" layoutX="838.0" layoutY="431.0" prefHeight="40.0" prefWidth="250.0" promptText="Destination">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="NumberOfSeatsAdminText" layoutX="838.0" layoutY="336.0" prefHeight="40.0" prefWidth="250.0" promptText="Number &gt; 0">
+               <font>
+                  <Font name="Berlin Sans FB" size="20.0" />
+               </font>
+            </TextField>
+            <Label layoutX="579.0" layoutY="339.0" prefHeight="34.0" prefWidth="212.0" text="Number Of Seats" textFill="#0f225e">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="28.0" />
+               </font>
+            </Label>
+            <Pane prefHeight="680.0" prefWidth="506.0" style="-fx-background-color: linear-gradient(to bottom, #010050, #002080);">
+               <children>
+                       <Label layoutX="30.0" layoutY="255.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="65.0" prefWidth="446.0" text="Add Reservation🚊" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="52.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="137.0" layoutY="334.0" text="Add Bookings Here 🔖" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+             <Button layoutX="1060.0" layoutY="607.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="98.0" style="-fx-background-color: #010050, #002080; -fx-background-radius: 20; -fx-border-color: white; -fx-border-width: 2; -fx-border-radius: 20;" text="Back" textAlignment="CENTER" textFill="WHITE" onAction="#GoToAdminMenu">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
